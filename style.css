@@ -1,0 +1,109 @@
+:root {
+  --verde-campo: #6B8E23;
+  --azul-cidade: #4682B4;
+  --cinza-claro: #f0f0f0;
+  --cinza: #d3d3d3;
+  --texto: #333;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: var(--texto);
+}
+
+header {
+  background: linear-gradient(to right, var(--verde-campo), var(--azul-cidade));
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--cinza-claro);
+  border: 1px solid var(--cinza);
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.origem {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  background-color: var(--cinza);
+  color: black;
+}
+
+.campo {
+  background-color: var(--verde-campo);
+  color: white;
+}
+
+.cidade {
+  background-color: var(--azul-cidade);
+  color: white;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.foto {
+  border: 1px solid var(--cinza);
+  border-radius: 8px;
+  background-color: var(--cinza-claro);
+  padding: 1rem;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.foto:hover {
+  transform: scale(1.03);
+}
+
+.placeholder {
+  background-color: #ccc;
+  height: 100px;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--cinza);
+  color: #333;
+  margin-top: 2rem;
+}
